@@ -44,7 +44,7 @@ What we see (what we don't want to see) is that there is a full table scan:
     ON "O"."CUSTOMER_ID" = "C"."ID"
     WHERE "C"."ID" = CAST(42 AS BIGINT)
 
-To fix this we can add an index to the database, see `data.sql`.
+To fix this we can add an index to the database, see `schema.sql`.
 
 Re-run the EXPLAIN plan and see what the difference is. This way performance issues can be
 
