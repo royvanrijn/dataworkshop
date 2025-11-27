@@ -5,6 +5,11 @@ Run the project and see where the N+1 issue comes from.
 Explore the database:
 http://localhost:8080/h2-console/
 
+The database name we're using is:
+`jdbc:h2:mem:jpa_demo`
+
+(instead of `jdbc:h2:mem:test`)
+
 # Step 2:
 
 Uncomment the fix and see how/why this solves the N+1 issue.
